@@ -4,7 +4,7 @@ app.use(express.logger());
 
 var fs = require('fs');
 var body = fs.readFileSync("index.html", "utf-8");
-
+console.log("Body:"+body);
 app.get('/', function(request, response) {
   
   response.send(body);
